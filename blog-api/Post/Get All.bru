@@ -1,0 +1,20 @@
+meta {
+  name: Get All
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:8000/api/posts?search=arely
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: arely
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

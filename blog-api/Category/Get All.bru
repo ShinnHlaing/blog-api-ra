@@ -1,0 +1,20 @@
+meta {
+  name: Get All
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://127.0.0.1:8000/api/categories?search=quia
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: quia
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
