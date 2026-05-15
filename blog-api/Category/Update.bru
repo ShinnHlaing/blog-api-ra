@@ -5,11 +5,18 @@ meta {
 }
 
 put {
-  url: http://127.0.0.1:8000/api/categories/1
-  body: none
+  url: http://127.0.0.1:8000/api/categories/6
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "name" : "Alex Shinn"
+  }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
